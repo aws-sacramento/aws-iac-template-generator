@@ -1,0 +1,31 @@
+{
+    "project_name": "fullstack-react-fastapi-image",  
+    "project_description": "Sample Fullstack React Application with FastAPI and Gunicorn+Uvicorn Image",  
+    "company_name": "Sacramento AWS User Group", 
+    "contact_name": "Tony Henderson", 
+    "contact_email": "aws.sacramento.usergroup@gmail.com", 
+    "app_name": "Fullstack FastAPI",  
+    "app_version": "0.0.1",  
+    "app_root_path": "/", 
+    "app_root_page": "index.html",   
+    "api_token_key": "{{ uuid4() }}",  
+    "api_root_path": "/", 
+    "aws_region_name": ["us-west-1", "us-west-2", "us-east-1", "us-east-2"], 
+    "aws_deploy_stage": ["development", "test", "stage", "production"],  
+    "add_dynamo_db":  true,  
+    "architecture":  ["x86_64", "arm64"], 
+    "runtime": ["3.10", "3.11", "3.12"],
+    "port_internal": "8000",
+    "port_external": "80",   
+    "__app_name_camel": "{{cookiecutter.app_name.replace(' ', '') }}",
+    "__app_name_kebab": "{{cookiecutter.app_name.lower().replace(' ', '-') }}", 
+    "__app_name_snake": "{{cookiecutter.app_name.lower().replace(' ', '_') }}",
+    "__app_create_date": "{% now 'local', '%d/%m/%Y' %}", 
+    "__sys_lambda_timeout": 15,
+    "__sys_lambda_function_memory": 128,
+    "__stack_name": "sam-{{cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "_copy_without_render": [
+        ".gitignore",
+        "*.svelte"
+    ]
+}

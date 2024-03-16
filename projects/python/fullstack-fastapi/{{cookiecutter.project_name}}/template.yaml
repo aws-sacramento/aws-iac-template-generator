@@ -1,0 +1,253 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: > 
+ Sample SAM Template for {{ cookiecutter.project_description }}
+
+# AWS Lambda function timeout and memory size
+Globals:
+  Api:
+    # -*- NOTE: AWS CORS Configuration tool: https://cors.serverlessland.com/ -*-
+    # The cors section will allow the API gateway to accept requests from the specified origin
+    # More details: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html 
+    # CORS properties can be hardened as required for specific environments.
+    Cors:
+        AllowOrigin: "'*'"
+        AllowHeaders: "'authorizationToken,Content-Type,X-Amz-Date,X-Amz-Security-Token,Authorization,X-Api-Key,X-Requested-With,Accept,Access-Control-Allow-Methods,Access-Control-Allow-Origin,Access-Control-Allow-Headers'"
+        AllowMethods: "'*'"
+         
+        # -*- Additional examples -*- 
+        # AllowMethods: "'GET, POST, DELETE, *'"
+        # AllowOrigin: "'*'"
+        # AllowCredentials: true  Uncomment only if you choose a specific origin instead of the * wildcard.
+        # MaxAge: "'2000'"
+
+  Function:
+    Timeout: {{ cookiecutter.__sys_lambda_timeout }}
+    MemorySize: {{ cookiecutter.__sys_lambda_function_memory }}
+
+# Input parameters that can be overridden from the CLI configuration
+Parameters:
+    DeployStage:
+      Type: String
+      Default: "{{cookiecutter.aws_deploy_stage}}"  # Deployment stage name to use in API Gateway  
+    SecretToken:
+      Type: String
+      Default: "{{cookiecutter.api_token_key}}" # Token name to use for authorization
+    AppName:
+      Type: String
+      Default: "{{cookiecutter.app_name}}" # Token name to use for authorization
+    AppVersion:
+      Type: String
+      Default: "{{cookiecutter.app_version}}"
+    AppWelcomeMessage:
+      Type: String
+      Default: "Welcome to the {{cookiecutter.company_name}} {{cookiecutter.app_name}} application!"   
+
+Resources:
+  # Create a secret token in Secrets Manager. 
+  {{cookiecutter.__app_name_camel}}ApiTokenSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: "{{cookiecutter.__app_name_camel}}AppApiToken"
+      SecretString: !Ref SecretToken
+  
+  # This creates the API gateway resources to access the lambda function. Note that we are also creating
+  # an authorizer which will get attached to the resources in the API gateway
+  {{cookiecutter.__app_name_camel}}AppAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Ref DeployStage
+
+      # CORS properties can be hardened as required for specific environments.
+      Cors:
+        AllowOrigin: "'*'"
+        AllowHeaders: "'authorizationToken,Content-Type,X-Amz-Date,X-Amz-Security-Token,Authorization,X-Api-Key,X-Requested-With,Accept,Access-Control-Allow-Methods,Access-Control-Allow-Origin,Access-Control-Allow-Headers'"
+        AllowMethods: "'*'"
+
+      # Lambda API Key Authorizer function
+      Auth:
+        AddDefaultAuthorizerToCorsPreflight: false # -*- IMPORTANT: Required for CORS Preflight -*-
+        DefaultAuthorizer: LambdaTokenAuthorizer
+        Authorizers:
+          LambdaTokenAuthorizer:
+            FunctionArn: !GetAtt {{cookiecutter.__app_name_camel}}AppAuthFunction.Arn
+            Identity:
+              Header: authorizationToken  # The header name to use for token recommended by AWS token authorization
+ 
+  # The lambda function which hosts {{cookiecutter.__app_name_camel}}App. Note the different attributes in this section. 
+  # SAM will use these inputs and build the docker image accordingly and upload the same 
+  # in ECR.           
+  {{cookiecutter.__app_name_camel}}AppFunction:
+    Type: AWS::Serverless::Function 
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
+      DockerTag: latest  
+    Properties:
+      FunctionUrlConfig:       # We are also creating a function URL in lambda just for testing purpose.
+        AuthType: NONE
+      PackageType: Image
+      ImageConfig:
+        Command: ["app.api.main.handler"] 
+      Architectures:
+        - {{cookiecutter.architecture}}
+
+ 
+      # Environment variables for the lambda function
+      Environment:
+        Variables:  
+ 
+          # -*- Reserved variables for AWS -*- #
+          # ENV:
+          # AWS_ACCESS_KEY_ID:
+          # AWS_SECRET_ACCESS_KEY:  
+          # AWS_REGION:
+          # AWS_AUTH_TOKEN:
+
+          # -*- Custom variables -*- #
+          APP_NAME: !Ref AppName 
+          APP_VERSION: !Ref AppVersion
+          APP_BUILD_DATE: "11/02/2024"
+          APP_WELCOME_MESSAGE: !Ref AppWelcomeMessage
+ 
+
+      Events:     # The events section will make sure to create the respective method and resource in the API gateway
+        default:  # Note that we are creating a {proxy+} resource so that all type of requests can be served.
+          Type: Api
+          Properties:
+            RestApiId: !Ref {{cookiecutter.__app_name_camel}}AppAPI
+            Path: {{cookiecutter.api_root_path}}
+            Method: ANY
+            Auth:
+              DefaultAuthorizer: {{cookiecutter.__app_name_camel}}AppAuthorizer
+              Authorizers:
+                {{cookiecutter.__app_name_camel}}AppAuthorizer:
+                  FunctionArn: !GetAtt {{cookiecutter.__app_name_camel}}AppAuthFunction.Arn         
+        proxy:
+          Type: Api
+          Properties:
+            RestApiId: !Ref {{cookiecutter.__app_name_camel}}AppAPI
+            Path: {{cookiecutter.api_root_path}}{proxy+}
+            Method: ANY
+            Auth:
+              DefaultAuthorizer: {{cookiecutter.__app_name_camel}}AppAuthorizer
+              Authorizers:
+                {{cookiecutter.__app_name_camel}}AppAuthorizer:
+                  FunctionArn: !GetAtt {{cookiecutter.__app_name_camel}}AppAuthFunction.Arn
+  
+  # The lambda function used for validating the token before API gateway calls the main lambda function                
+  {{cookiecutter.__app_name_camel}}AppAuthFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./authorizer
+      Handler: index.handler
+      Runtime: nodejs18.x
+      Environment:
+        Variables:
+          SECRET_ID: "{{cookiecutter.__app_name_camel}}AppApiToken"
+      Policies:
+      - Statement:
+        - Sid: CreateLogGroup
+          Effect: Allow
+          Action:
+          - logs:CreateLogStream
+          - logs:PutLogEvents
+          Resource: !Sub 'arn:aws:logs:${AWS::Region}:${AWS::AccountId}:*'
+        - Sid: AllowSecretsAccess
+          Effect: Allow
+          Action:
+          - secretsmanager:GetSecretValue
+          Resource: !Ref {{cookiecutter.__app_name_camel}}ApiTokenSecret
+
+  # The s3 bucket for hosting web application
+  {{cookiecutter.__app_name_camel}}AppClientS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-client-app-s3-bucket
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  # The s3 app client bucket policy
+  {{cookiecutter.__app_name_camel}}AppClientS3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref {{cookiecutter.__app_name_camel}}AppClientS3Bucket
+      PolicyDocument:
+        Id: PolicyForCloudFrontPrivateContent
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowCloudFrontServicePrincipal
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub arn:aws:s3:::${AWS::StackName}-client-app-s3-bucket/*
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/${ {{cookiecutter.__app_name_camel}}CloudFrontDistribution}
+   
+  # The s3 bucket origin access control policy
+  {{cookiecutter.__app_name_camel}}AppOriginAccessControl:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub ${AWS::StackName}-client-app-origin-ac
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  # Cloudfront distribution for s3 bucket
+  {{cookiecutter.__app_name_camel}}CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Origins:
+          - DomainName: !GetAtt {{cookiecutter.__app_name_camel}}AppClientS3Bucket.RegionalDomainName
+            Id: !Sub ${AWS::StackName}-client-app-s3-origin
+            OriginAccessControlId: !GetAtt {{cookiecutter.__app_name_camel}}AppOriginAccessControl.Id
+            S3OriginConfig: {}
+        Enabled: true
+        DefaultRootObject: {{cookiecutter.app_root_page}}
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          TargetOriginId: !Sub ${AWS::StackName}-client-app-s3-origin
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          OriginRequestPolicyId: 88a5eaf4-2fd4-4709-b370-b4c650ea3fcf
+          ViewerProtocolPolicy: redirect-to-https
+        PriceClass: PriceClass_All
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: {{cookiecutter.app_root_path}}{{cookiecutter.app_root_page}}
+          - ErrorCode: 403
+            ResponseCode: 200
+            ResponsePagePath: {{cookiecutter.app_root_path}}{{cookiecutter.app_root_page}}
+ 
+
+Outputs:
+
+  # API endpoint
+  {{cookiecutter.__app_name_camel}}AppAPI:
+    Description: API Gateway endpoint URL
+    Value: !Sub "https://${ {{cookiecutter.__app_name_camel}}AppAPI}.execute-api.${AWS::Region}.amazonaws.com/${DeployStage}"
+  
+  # OpenAPI documentation endpoint
+  {{cookiecutter.__app_name_camel}}AppFunctionUrlEndpoint:
+      Description: "Functional docs URL(for internal use only)"
+      Value: !Join ["", [ Fn::GetAtt: {{cookiecutter.__app_name_camel}}AppFunctionUrl.FunctionUrl, "docs" ] ]         
+  
+  # Client web application (hosted on s3 bucket)
+  {{cookiecutter.__app_name_camel}}AppDomain:
+    Value: !GetAtt {{cookiecutter.__app_name_camel}}CloudFrontDistribution.DomainName
+
+  {{cookiecutter.__app_name_camel}}CloudFrontDistributionId:
+    Value: !GetAtt {{cookiecutter.__app_name_camel}}CloudFrontDistribution.Id
+
+  {{cookiecutter.__app_name_camel}}AppClientS3BucketName:
+    Value: !Ref {{cookiecutter.__app_name_camel}}AppClientS3Bucket  

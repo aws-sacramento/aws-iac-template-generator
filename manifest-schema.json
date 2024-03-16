@@ -1,0 +1,376 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dotnet6": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["dotnet6/api-ef"] },
+            "displayName": { "type": "string", "enum": ["Quick Start: SQS"] },
+            "dependencyManager": { "type": "string", "enum": ["cli-package"] },
+            "appTemplate": { "type": "string", "enum": ["quick-start-sqs"] },
+            "packageType": { "type": "string", "enum": ["Image"] },
+            "useCaseName": { "type": "string", "enum": ["Serverless API"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": {
+              "type": "string",
+              "enum": ["dotnet6/fullstack-react-ef"]
+            },
+            "displayName": { "type": "string", "enum": ["Quick Start: SNS"] },
+            "dependencyManager": { "type": "string", "enum": ["cli-package"] },
+            "appTemplate": { "type": "string", "enum": ["quickstart-sns"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": {
+              "type": "string",
+              "enum": ["Serverless Fullstack"]
+            }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "java17": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["java17/hello-gradle"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example: Gradle"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["gradle"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["java17/hello-maven"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example: Maven"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["maven"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "java21": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["java21/hello-gradle"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example: Gradle"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["gradle"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["java21/hello-maven"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example: Maven"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["maven"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "nodejs18.x": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["nodejs18.x/hello"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["npm"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "nodejs20.x": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["nodejs20.x/hello"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["npm"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "python3.10": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["python3.10/hello"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["pip"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["python3.10/hello-pt"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example with Powertools for AWS Lambda"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["pip"] },
+            "appTemplate": {
+              "type": "string",
+              "enum": ["hello-world-powertools-python"]
+            },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": {
+              "type": "string",
+              "enum": ["Hello World Example with Powertools for AWS Lambda"]
+            }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": {
+              "type": "string",
+              "enum": ["python3.10/event-bridge"]
+            },
+            "displayName": {
+              "type": "string",
+              "enum": ["EventBridge Hello World"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["pip"] },
+            "appTemplate": {
+              "type": "string",
+              "enum": ["eventBridge-hello-world"]
+            },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": {
+              "type": "string",
+              "enum": ["Infrastructure event management"]
+            }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "python3.11": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["python3.11/hello"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["pip"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "python3.12": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "directory": { "type": "string", "enum": ["python3.12/hello"] },
+            "displayName": {
+              "type": "string",
+              "enum": ["Hello World Example"]
+            },
+            "dependencyManager": { "type": "string", "enum": ["pip"] },
+            "appTemplate": { "type": "string", "enum": ["hello-world"] },
+            "packageType": { "type": "string", "enum": ["Zip"] },
+            "useCaseName": { "type": "string", "enum": ["Hello World Example"] }
+          },
+          "required": [
+            "directory",
+            "displayName",
+            "dependencyManager",
+            "appTemplate",
+            "packageType",
+            "useCaseName"
+          ]
+        }
+      ],
+      "minItems": 1,
+      "maxItems": 1
+    }
+  }
+}

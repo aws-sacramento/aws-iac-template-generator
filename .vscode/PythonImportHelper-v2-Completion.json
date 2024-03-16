@@ -1,0 +1,847 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Mangum",
+        "importPath": "mangum",
+        "description": "mangum",
+        "isExtraImport": true,
+        "detail": "mangum",
+        "documentation": {}
+    },
+    {
+        "label": "Mangum",
+        "importPath": "mangum",
+        "description": "mangum",
+        "isExtraImport": true,
+        "detail": "mangum",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "dynamo",
+        "importPath": "app.api.src",
+        "description": "app.api.src",
+        "isExtraImport": true,
+        "detail": "app.api.src",
+        "documentation": {}
+    },
+    {
+        "label": "block_explorer",
+        "importPath": "app.api.src",
+        "description": "app.api.src",
+        "isExtraImport": true,
+        "detail": "app.api.src",
+        "documentation": {}
+    },
+    {
+        "label": "dynamo",
+        "importPath": "app.api.src",
+        "description": "app.api.src",
+        "isExtraImport": true,
+        "detail": "app.api.src",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.api.settings",
+        "description": "app.api.settings",
+        "isExtraImport": true,
+        "detail": "app.api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.api.settings",
+        "description": "app.api.settings",
+        "isExtraImport": true,
+        "detail": "app.api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.api.settings",
+        "description": "app.api.settings",
+        "isExtraImport": true,
+        "detail": "app.api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.api.settings",
+        "description": "app.api.settings",
+        "isExtraImport": true,
+        "detail": "app.api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.api.settings",
+        "description": "app.api.settings",
+        "isExtraImport": true,
+        "detail": "app.api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "urllib3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib3",
+        "description": "urllib3",
+        "detail": "urllib3",
+        "documentation": {}
+    },
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing_extensions",
+        "description": "typing_extensions",
+        "isExtraImport": true,
+        "detail": "typing_extensions",
+        "documentation": {}
+    },
+    {
+        "label": "contracts",
+        "importPath": "app.api.routers",
+        "description": "app.api.routers",
+        "isExtraImport": true,
+        "detail": "app.api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "importPath": "app.api.routers",
+        "description": "app.api.routers",
+        "isExtraImport": true,
+        "detail": "app.api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "cookiecutter",
+        "importPath": "cookiecutter.main",
+        "description": "cookiecutter.main",
+        "isExtraImport": true,
+        "detail": "cookiecutter.main",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "click",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "click",
+        "description": "click",
+        "detail": "click",
+        "documentation": {}
+    },
+    {
+        "label": "bcolors",
+        "kind": 6,
+        "importPath": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "description": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "peekOfCode": "class bcolors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'\n# -*- coding: utf-8 -*-",
+        "detail": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "cur_dir",
+        "kind": 5,
+        "importPath": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "description": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "peekOfCode": "cur_dir = os.getcwd()\nprint (\"The current working directory is %s\" % cur_dir)\n# try:\n#     # -*- Creating .net Solution file -*-\n#     os.system('dotnet new sln')\n#     print (\"Solution file created for {{cookiecutter.project_dir}} solution...\") \n#     # -*- Adding SDK Project -*-\n#     # -*- os.system('dotnet sln {{cookiecutter.project_dir}}.sln add BinaryBlox.SDK/BinaryBlox.SDK.csproj')\n#     # -*- print (\"Project BinaryBlox.SDK added to solution...\") \n#      # -*- Adding {{cookiecutter.project_identity_pkg}} Project -*-",
+        "detail": "projects.python.api-fastapi.hooks.post_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "bcolors",
+        "kind": 6,
+        "importPath": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "description": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "peekOfCode": "class bcolors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'\n# -*- coding: utf-8 -*-",
+        "detail": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "cur_dir",
+        "kind": 5,
+        "importPath": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "description": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "peekOfCode": "cur_dir = os.getcwd()\nprint (\"The current working directory is %s\" % cur_dir)\n # -*- Installing Entity framework tools -*- \n# os.system('dotnet tool uninstall -g dotnet-ef')\n# os.system('dotnet tool install -g dotnet-ef --version {{cookiecutter.project_target_version}}')\n# print (\"Adding .NET Entity Framework tools version [{{cookiecutter.project_target_version}}]...\") \n# -*- Installing InentityServer4 Templates - back to defaults->(dotnet new --debug:reinit)-*-\n# -*- Ios.system('dotnet new -i identityserver4.templates')-*-\n# -*- Iprint (\"Adding Identity Server 4 Templates...\") -*-",
+        "detail": "projects.python.api-fastapi.hooks.pre_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "description": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "peekOfCode": "app = FastAPI(\n    version=\"{{cookiecutter.api_version}}\",\n    title=\"{{cookiecutter.company_name}} {{cookiecutter.app_name}}\",\n    summary=\"API for the {{cookiecutter.company_name}} {{cookiecutter.app_name}} application\",\n    contact={\n        \"name\": \"{{cookiecutter.company_name}}\",\n        \"email\": \"{{cookiecutter.contact_email}}\",\n    },\n)\n###############################################################################",
+        "detail": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "handler",
+        "kind": 5,
+        "importPath": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "description": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "peekOfCode": "handler = Mangum(app)\n###############################################################################\n#   Run the self contained application                                        #\n###############################################################################\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"0.0.0.0\", port={{cookiecutter.port_internal}})",
+        "detail": "projects.python.api-fastapi.{{cookiecutter.project_name}}.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "bcolors",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "description": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "peekOfCode": "class bcolors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'\n# -*- coding: utf-8 -*-",
+        "detail": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "cur_dir",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "description": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "peekOfCode": "cur_dir = os.getcwd()\nprint (\"The current working directory is %s\" % cur_dir)\n# try:\n#     # -*- Creating .net Solution file -*-\n#     os.system('dotnet new sln')\n#     print (\"Solution file created for {{cookiecutter.project_dir}} solution...\") \n#     # -*- Adding SDK Project -*-\n#     # -*- os.system('dotnet sln {{cookiecutter.project_dir}}.sln add BinaryBlox.SDK/BinaryBlox.SDK.csproj')\n#     # -*- print (\"Project BinaryBlox.SDK added to solution...\") \n#      # -*- Adding {{cookiecutter.project_identity_pkg}} Project -*-",
+        "detail": "projects.python.fullstack-web3-fastapi.hooks.post_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "bcolors",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "description": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "peekOfCode": "class bcolors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'\n# -*- coding: utf-8 -*-",
+        "detail": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "cur_dir",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "description": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "peekOfCode": "cur_dir = os.getcwd()\nprint (\"The current working directory is %s\" % cur_dir)\n # -*- Installing Entity framework tools -*- \n# os.system('dotnet tool uninstall -g dotnet-ef')\n# os.system('dotnet tool install -g dotnet-ef --version {{cookiecutter.project_target_version}}')\n# print (\"Adding .NET Entity Framework tools version [{{cookiecutter.project_target_version}}]...\") \n# -*- Installing InentityServer4 Templates - back to defaults->(dotnet new --debug:reinit)-*-\n# -*- Ios.system('dotnet new -i identityserver4.templates')-*-\n# -*- Iprint (\"Adding Identity Server 4 Templates...\") -*-",
+        "detail": "projects.python.fullstack-web3-fastapi.hooks.pre_gen_proj",
+        "documentation": {}
+    },
+    {
+        "label": "Contract",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "peekOfCode": "class Contract(BaseModel):\n    uid: str = str(uuid4())\n    address: str\n    abi: list[dict]\n    labels: list[str] = []\n    block_explorer_url: str\n    block_explorer_api_url: str\n    chain_id: int | str\n    deployment_date: str = datetime.now().strftime(\"%Y-%m-%d\")\n    description: str = \"\"",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\nTABLE_NAME = get_settings().dyn_contract_table_name\nclass Contract(BaseModel):\n    uid: str = str(uuid4())\n    address: str\n    abi: list[dict]\n    labels: list[str] = []\n    block_explorer_url: str\n    block_explorer_api_url: str",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "documentation": {}
+    },
+    {
+        "label": "TABLE_NAME",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "peekOfCode": "TABLE_NAME = get_settings().dyn_contract_table_name\nclass Contract(BaseModel):\n    uid: str = str(uuid4())\n    address: str\n    abi: list[dict]\n    labels: list[str] = []\n    block_explorer_url: str\n    block_explorer_api_url: str\n    chain_id: int | str\n    deployment_date: str = datetime.now().strftime(\"%Y-%m-%d\")",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/contracts\",\n    tags=[\"contracts\"],\n    responses={404: {\"description\": \"Not found\"}},\n)\n\"\"\"\n## COPY USER METHODS WHEN IT COMES TIME TO DO THIS.\n# EXCEPT: USE THE BLOCK EXPLORER API TO GET THE LOGS FOR THE CONTRACTS\n@router.get(\"/\")\nasync def get_contracts():",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.contracts",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "peekOfCode": "class User(BaseModel):\n    uid: str = \"\"\n    first_name: str = \"\"\n    last_name: str = \"\"\n    email: str = \"\"\n    role: str = \"user\"\n    ethereum_address: str = \"\"\nrouter = APIRouter(\n    prefix=\"/users\",\n    tags=[\"users\"],",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\nTABLE_NAME = get_settings().dyn_user_table_name\nclass User(BaseModel):\n    uid: str = \"\"\n    first_name: str = \"\"\n    last_name: str = \"\"\n    email: str = \"\"\n    role: str = \"user\"\n    ethereum_address: str = \"\"",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "documentation": {}
+    },
+    {
+        "label": "TABLE_NAME",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "peekOfCode": "TABLE_NAME = get_settings().dyn_user_table_name\nclass User(BaseModel):\n    uid: str = \"\"\n    first_name: str = \"\"\n    last_name: str = \"\"\n    email: str = \"\"\n    role: str = \"user\"\n    ethereum_address: str = \"\"\nrouter = APIRouter(\n    prefix=\"/users\",",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/users\",\n    tags=[\"users\"],\n    responses={404: {\"description\": \"Not found\"}},\n)\n@router.get(\"/\")\nasync def get_users():\n    return dynamo.get_all_items(table_name=TABLE_NAME)\n@router.get(\"/{uid}\")\nasync def get_user(uid: str):",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.routers.users",
+        "documentation": {}
+    },
+    {
+        "label": "AppEnvironments",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "peekOfCode": "class AppEnvironments:\n    LOCAL = 'local'\n    DEVELOPMENT = 'development'\n    STAGE = 'stage'\n    TEST = 'test'\n    PRODUCTION = 'production' \nclass Settings(BaseSettings):\n    app_environment: str =\"local\"\n    app_name: str = \"---\" \n    app_version: str = \"0.0.1\"",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "peekOfCode": "class Settings(BaseSettings):\n    app_environment: str =\"local\"\n    app_name: str = \"---\" \n    app_version: str = \"0.0.1\"\n    app_build_date: str = \"---\"\n    app_welcome_message: str = \"---\"\n    # AWS Access\n    aws_auth_token: str = \"\"\n    aws_access_key_id: str =\"\"\n    aws_secret_access_key: str =\"\"",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.settings.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\nCHAIN_DETAILS = {\n    8453: {\n        \"name\": \"base-mainnet\",\n        \"api_url\": \"https://api.basescan.org/\",\n        \"api_key_name\": \"BASESCAN_API_KEY\",\n    },\n    84532: {\n        \"name\": \"base-sepolia\",",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "documentation": {}
+    },
+    {
+        "label": "get_setting_from_key",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "peekOfCode": "def get_setting_from_key(key_name: str) -> str:\n    key_id_idx = 0\n    key_value_idx = 1\n    if not key_name:\n        return None\n    for setting  in get_settings():\n        # print (f\"Setting:  {setting[0] }\" )\n        if(setting[key_id_idx] == key_name.lower()):\n            return setting[key_value_idx]\ndef get_contract_logs(chain_id: str | int, address: str) -> dict:",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "documentation": {}
+    },
+    {
+        "label": "get_contract_logs",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "peekOfCode": "def get_contract_logs(chain_id: str | int, address: str) -> dict:\n    \"\"\"Send request to the block explorer API to view contract logs\"\"\"\n    chain = CHAIN_DETAILS.get(chain_id, None)\n    if not chain:\n        return {\n            \"success\": False,\n            \"body\": \"Invalid chain name\",\n        }\n    for setting  in get_settings():\n        print (f\"Setting:  {setting[0] }\" )",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "documentation": {}
+    },
+    {
+        "label": "CHAIN_DETAILS",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "peekOfCode": "CHAIN_DETAILS = {\n    8453: {\n        \"name\": \"base-mainnet\",\n        \"api_url\": \"https://api.basescan.org/\",\n        \"api_key_name\": \"BASESCAN_API_KEY\",\n    },\n    84532: {\n        \"name\": \"base-sepolia\",\n        \"api_url\": \"https://api-sepolia.basescan.org/\",\n        \"api_key_name\": \"BASESCAN_API_KEY\",",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.block_explorer",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\nREGION_NAME = get_settings().aws_region\ndef get_table(table_name: str):\n    \"\"\"Rturns a DynamoDB table object\"\"\"\n    dynamodb = boto3.resource(\"dynamodb\", region_name=REGION_NAME)\n    return dynamodb.Table(table_name)\ndef get_all_items(table_name: str) -> dict:\n    \"\"\"Returns all items in a DynamoDB table\"\"\"\n    table = get_table(table_name)",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "get_table",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def get_table(table_name: str):\n    \"\"\"Rturns a DynamoDB table object\"\"\"\n    dynamodb = boto3.resource(\"dynamodb\", region_name=REGION_NAME)\n    return dynamodb.Table(table_name)\ndef get_all_items(table_name: str) -> dict:\n    \"\"\"Returns all items in a DynamoDB table\"\"\"\n    table = get_table(table_name)\n    response = table.scan()\n    return response[\"Items\"]\ndef get_item(table_name: str, uid: str) -> dict:",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_items",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def get_all_items(table_name: str) -> dict:\n    \"\"\"Returns all items in a DynamoDB table\"\"\"\n    table = get_table(table_name)\n    response = table.scan()\n    return response[\"Items\"]\ndef get_item(table_name: str, uid: str) -> dict:\n    \"\"\"Get single item from DynamoDB table\"\"\"\n    table = get_table(table_name)\n    response = table.get_item(Key={\"uid\": uid})\n    item = response.get(\"Item\")",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "get_item",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def get_item(table_name: str, uid: str) -> dict:\n    \"\"\"Get single item from DynamoDB table\"\"\"\n    table = get_table(table_name)\n    response = table.get_item(Key={\"uid\": uid})\n    item = response.get(\"Item\")\n    return item\ndef create_item(table_name: str, item: dict) -> dict:\n    \"\"\"Create single item in DynamoDB table\"\"\"\n    if \"uid\" not in item or not item[\"uid\"]:\n        item[\"uid\"] = str(uuid4())",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "create_item",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def create_item(table_name: str, item: dict) -> dict:\n    \"\"\"Create single item in DynamoDB table\"\"\"\n    if \"uid\" not in item or not item[\"uid\"]:\n        item[\"uid\"] = str(uuid4())\n    table = get_table(table_name)\n    table.put_item(Item=item)\n    return item\ndef delete_item(table_name: str, uid: str) -> dict:\n    \"\"\"Delete single item from DynamoDB table\"\"\"\n    table = get_table(table_name)",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "delete_item",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def delete_item(table_name: str, uid: str) -> dict:\n    \"\"\"Delete single item from DynamoDB table\"\"\"\n    table = get_table(table_name)\n    table.delete_item(Key={\"uid\": uid})\n    return {\"success\": True}\ndef update_item(table_name: str, item: dict) -> dict:\n    \"\"\"Update single item in DynamoDB table\"\"\"\n    if \"uid\" not in item or not item[\"uid\"]:\n        item[\"uid\"] = str(uuid4())\n        return create_item(table_name=table_name, item=item)",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "update_item",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "def update_item(table_name: str, item: dict) -> dict:\n    \"\"\"Update single item in DynamoDB table\"\"\"\n    if \"uid\" not in item or not item[\"uid\"]:\n        item[\"uid\"] = str(uuid4())\n        return create_item(table_name=table_name, item=item)\n    table = get_table(table_name)\n    keys = [k for k in item.keys() if k != \"uid\"]\n    expression_attribute_names = {f\"#{k}\": k for k in keys}\n    expression_attribute_values = {f\":new_{k}\": item[k] for k in keys}\n    update_expression = \"Set \" + \", \".join([f\"#{k} = :new_{k}\" for k in keys])",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "REGION_NAME",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "peekOfCode": "REGION_NAME = get_settings().aws_region\ndef get_table(table_name: str):\n    \"\"\"Rturns a DynamoDB table object\"\"\"\n    dynamodb = boto3.resource(\"dynamodb\", region_name=REGION_NAME)\n    return dynamodb.Table(table_name)\ndef get_all_items(table_name: str) -> dict:\n    \"\"\"Returns all items in a DynamoDB table\"\"\"\n    table = get_table(table_name)\n    response = table.scan()\n    return response[\"Items\"]",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.dynamo",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\nREGION_NAME = get_settings().aws_region\nBUCKET_NAME = get_settings().aws_s3_bucket_name\nICON_DIRECTORY = get_settings().aws_s3_token_icon_directory\ndef uplaod_to_s3(filename: str, file_bytes: bytes) -> dict:\n    \"\"\"Upload file bytes to an S3 bucket.\"\"\"\n    s3 = boto3.resource(\"s3\", region_name=REGION_NAME)\n    response = s3.put_object(\n        Bucket=BUCKET_NAME,",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "documentation": {}
+    },
+    {
+        "label": "uplaod_to_s3",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "peekOfCode": "def uplaod_to_s3(filename: str, file_bytes: bytes) -> dict:\n    \"\"\"Upload file bytes to an S3 bucket.\"\"\"\n    s3 = boto3.resource(\"s3\", region_name=REGION_NAME)\n    response = s3.put_object(\n        Bucket=BUCKET_NAME,\n        Key=f\"{ICON_DIRECTORY}/{filename}\",\n        Body=file_bytes,\n    )\n    return response",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "documentation": {}
+    },
+    {
+        "label": "REGION_NAME",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "peekOfCode": "REGION_NAME = get_settings().aws_region\nBUCKET_NAME = get_settings().aws_s3_bucket_name\nICON_DIRECTORY = get_settings().aws_s3_token_icon_directory\ndef uplaod_to_s3(filename: str, file_bytes: bytes) -> dict:\n    \"\"\"Upload file bytes to an S3 bucket.\"\"\"\n    s3 = boto3.resource(\"s3\", region_name=REGION_NAME)\n    response = s3.put_object(\n        Bucket=BUCKET_NAME,\n        Key=f\"{ICON_DIRECTORY}/{filename}\",\n        Body=file_bytes,",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "documentation": {}
+    },
+    {
+        "label": "BUCKET_NAME",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "peekOfCode": "BUCKET_NAME = get_settings().aws_s3_bucket_name\nICON_DIRECTORY = get_settings().aws_s3_token_icon_directory\ndef uplaod_to_s3(filename: str, file_bytes: bytes) -> dict:\n    \"\"\"Upload file bytes to an S3 bucket.\"\"\"\n    s3 = boto3.resource(\"s3\", region_name=REGION_NAME)\n    response = s3.put_object(\n        Bucket=BUCKET_NAME,\n        Key=f\"{ICON_DIRECTORY}/{filename}\",\n        Body=file_bytes,\n    )",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "documentation": {}
+    },
+    {
+        "label": "ICON_DIRECTORY",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "peekOfCode": "ICON_DIRECTORY = get_settings().aws_s3_token_icon_directory\ndef uplaod_to_s3(filename: str, file_bytes: bytes) -> dict:\n    \"\"\"Upload file bytes to an S3 bucket.\"\"\"\n    s3 = boto3.resource(\"s3\", region_name=REGION_NAME)\n    response = s3.put_object(\n        Bucket=BUCKET_NAME,\n        Key=f\"{ICON_DIRECTORY}/{filename}\",\n        Body=file_bytes,\n    )\n    return response",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.src.s3",
+        "documentation": {}
+    },
+    {
+        "label": "environments",
+        "kind": 6,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "class environments:\n    LOCAL = 'local'\n    DEVELOPMENT = 'development'\n    STAGE = 'stage'\n    TEST = 'test'\n    PRODUCTION = 'production' \n# Set default environment file\ndefault_environment:str = environments.DEVELOPMENT\napp = FastAPI() \n@lru_cache",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "def get_settings():\n    return config.Settings()\n# print(f\"Settings: {get_settings().app_name}  {get_settings().app_version}  {get_settings().app_environment}\")\n###############################################################################\n#   Application object for the API                                            #\n###############################################################################\napp = FastAPI(\n    version=\"{{cookiecutter.app_version}}\",\n    title=\"{{cookiecutter.company_name}} {{cookiecutter.app_name}}\",\n    summary=\"Backend API for the {{cookiecutter.company_name}} {{cookiecutter.app_name}} application\",",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "default_environment:str",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "default_environment:str = environments.DEVELOPMENT\napp = FastAPI() \n@lru_cache\ndef get_settings():\n    return config.Settings()\n# print(f\"Settings: {get_settings().app_name}  {get_settings().app_version}  {get_settings().app_environment}\")\n###############################################################################\n#   Application object for the API                                            #\n###############################################################################\napp = FastAPI(",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "app = FastAPI() \n@lru_cache\ndef get_settings():\n    return config.Settings()\n# print(f\"Settings: {get_settings().app_name}  {get_settings().app_version}  {get_settings().app_environment}\")\n###############################################################################\n#   Application object for the API                                            #\n###############################################################################\napp = FastAPI(\n    version=\"{{cookiecutter.app_version}}\",",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "app = FastAPI(\n    version=\"{{cookiecutter.app_version}}\",\n    title=\"{{cookiecutter.company_name}} {{cookiecutter.app_name}}\",\n    summary=\"Backend API for the {{cookiecutter.company_name}} {{cookiecutter.app_name}} application\",\n    contact={\n        \"name\": \"{{cookiecutter.company_name}}\",\n        \"email\": \"{{cookiecutter.contact_email}}\",\n    }\n)\n{%- if cookiecutter.add_cors_middleware == true%}",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "handler",
+        "kind": 5,
+        "importPath": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "description": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "peekOfCode": "handler = Mangum(app)\n###############################################################################\n#   Run the self contained application                                        #\n###############################################################################\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"0.0.0.0\", port={{cookiecutter.port_internal}})",
+        "detail": "projects.python.fullstack-web3-fastapi.{{cookiecutter.project_name}}.app.api.main",
+        "documentation": {}
+    },
+    {
+        "label": "schema",
+        "kind": 5,
+        "importPath": "tools.generate_manifest_schema",
+        "description": "tools.generate_manifest_schema",
+        "peekOfCode": "schema = {\n    \"type\": \"object\",\n    \"additionalProperties\": False,\n    \"properties\": {\n    }\n}\nwith open(\"../manifest.json\") as f:\n    manifest = json.load(f)\n    for runtime in manifest.keys():\n        schema[\"properties\"][runtime] = {",
+        "detail": "tools.generate_manifest_schema",
+        "documentation": {}
+    },
+    {
+        "label": "bcolors",
+        "kind": 6,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "class bcolors:\n    \"\"\"\n    A class that defines the color codes used to format text in the terminal.\n    Attributes:\n        ENDC (str): The color code to reset all formatting.\n        BOLD (str): The color code to make text bold.\n        UNDERLINE (str): The color code to underline text.\n    \"\"\"\n    HEADER = '\\033[95m'\n    OK_BLUE = '\\033[94m'",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "keyType",
+        "kind": 6,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "class keyType:\n    DIRECTORY = 'directory'\n    APP_TEMPLATE = 'appTemplate'\n    ACTIVE = 'active'\n# -*- coding: utf-8 -*-\ncur_dir = os.getcwd()\ndef prompt_options(options: list, message: str = \"Select an option:\") -> str:\n    \"\"\"\n    Displays a list of options to the user and prompts them to select one of the options.\n    Returns the selected option.",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "prompt_options",
+        "kind": 2,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "def prompt_options(options: list, message: str = \"Select an option:\") -> str:\n    \"\"\"\n    Displays a list of options to the user and prompts them to select one of the options.\n    Returns the selected option.\n    Args:\n        options (list): A list of options to be displayed to the user.\n        message (str): The message to be displayed before the list of options.\n    Returns:\n        str: The option selected by the user.\n    \"\"\"",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "cut_cookie",
+        "kind": 2,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "def cut_cookie(template: dict, output_dir: str = \"\") -> None:\n    \"\"\"\n    This function generates a template by calling the `cookiecutter` command with the specified directory path.\n    Args:\n        template (dict): A dictionary containing the template information, including the directory path.\n        output_dir (str, optional): The output directory for the generated template. Defaults to \"\".\n    Returns:\n        None\n    \"\"\"\n    for key, value in template.items():",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "validate_and_create_directory_path",
+        "kind": 2,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "def validate_and_create_directory_path(directory_path) -> bool:\n    # Define the pattern for supported characters\n    pattern = r'^[a-zA-Z0-9_\\-./]+$'\n    # Check if the file path matches the pattern\n    if not re.match(pattern, directory_path):  \n        click.echo(bcolors.FAIL + \"\\nFile path contains unsupported characters.\" + bcolors.END_COLOR)\n        return False\n    last_char = directory_path[len(directory_path)-1]\n    # Add Trailing slash to create last route.\n    if(last_char != '/'):",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "get_active_runtimes",
+        "kind": 2,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "def get_active_runtimes(manifest):\n    \"\"\"\n    Returns a list of active runtimes from the given manifest.\n    Args:\n        manifest (dict): A dictionary representing the manifest of runtimes and templates.\n    Returns:\n        list: A list of runtimes that have at least one active template.\n    \"\"\"\n    active_runtimes = []\n    for runtime, templates in manifest.items():",
+        "detail": "generate-template",
+        "documentation": {}
+    },
+    {
+        "label": "cur_dir",
+        "kind": 5,
+        "importPath": "generate-template",
+        "description": "generate-template",
+        "peekOfCode": "cur_dir = os.getcwd()\ndef prompt_options(options: list, message: str = \"Select an option:\") -> str:\n    \"\"\"\n    Displays a list of options to the user and prompts them to select one of the options.\n    Returns the selected option.\n    Args:\n        options (list): A list of options to be displayed to the user.\n        message (str): The message to be displayed before the list of options.\n    Returns:\n        str: The option selected by the user.",
+        "detail": "generate-template",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,93 @@
+{  
+  "dotnet": [
+    {
+      "active": true,
+      "directory": "projects/dotnet/api-ef",
+      "displayName": "Quick Start: SQS",
+      "dependencyManager": "cli-package",
+      "appTemplate": "quick-start-sqs",
+      "packageType": "Image",
+      "useCaseName": "Serverless API"
+    },
+    {
+      "active": false,
+      "directory": "projects/dotnet/fullstack-react-ef",
+      "displayName": "Quick Start: SNS",
+      "dependencyManager": "cli-package",
+      "appTemplate": "quickstart-sns",
+      "packageType": "Zip",
+      "useCaseName": "Serverless Fullstack"
+    }
+  ],
+  "dotnet-8.0": [
+    {
+      "active": false,
+      "directory": "projects/dotnet-8.0/api-ef",
+      "displayName": "Quick Start: SQS",
+      "dependencyManager": "cli-package",
+      "appTemplate": "quick-start-sqs",
+      "packageType": "Image",
+      "useCaseName": "Serverless API"
+    },
+    {
+      "active": false,
+      "directory": "projects/dotnet-8.0/fullstack-react-ef",
+      "displayName": "Quick Start: SNS",
+      "dependencyManager": "cli-package",
+      "appTemplate": "quickstart-sns",
+      "packageType": "Zip",
+      "useCaseName": "Serverless Fullstack"
+    }
+  ], 
+  "java": [
+    {
+      "active": true,
+      "directory": "projects/java/hello-gradle",
+      "displayName": "Hello World Example: Gradle",
+      "dependencyManager": "gradle",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    },
+    {
+      "active": false,
+      "directory": "projects/java/hello-maven",
+      "displayName": "Hello World Example: Maven",
+      "dependencyManager": "maven",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    }
+  ],  
+  "nodejs": [
+    {
+      "active": true,
+      "directory": "projects/nodejs/hello",
+      "displayName": "Hello World Example",
+      "dependencyManager": "npm",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    }
+  ],  
+  "python": [
+    {
+      "active": false,
+      "directory": "projects/python/fullstack-react-fastapi",
+      "displayName": "FastAPI Fullstack React Example",
+      "dependencyManager": "pip",
+      "appTemplate": "fullstack-react-fastapi-image",
+      "packageType": "Image",
+      "useCaseName": "Fullstack Serverless React MUI FastAPI Image Example"
+    },
+    {
+      "active": true,
+      "directory": "projects/python/fullstack-fastapi",
+      "displayName": "Fullstack FastAPI Example",
+      "dependencyManager": "pip",
+      "appTemplate": "fullstack-fastapi-image",
+      "packageType": "Image",
+      "useCaseName": "Fullstack Serverless FastAPI App Image Example"
+    } 
+  ] 
+}
